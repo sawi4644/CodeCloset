@@ -1,29 +1,47 @@
-/* hero top picture closet logo */
 
-.hero-section {
-    background-color:lightgray; 
-    /* url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat; */
+.marketing-site-hero {
+    background: url("/img/head.gif") top right no-repeat;
+    height: 45vh;
     background-size: cover;
-    height: 8vh;
-    text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   
-  .hero-section .hero-section-text {
-    color: #0a0a0a;
-    display: flex;
-    text-align: left;
+  @media screen and (min-width: 40em) {
+    .marketing-site-hero {
+      background-position: center center;
+    }
   }
   
+  .marketing-site-hero-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   
+  .marketing-site-hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .marketing-site-hero-content .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 40em) {
+    .marketing-site-hero-content {
+      padding-left: 50%;
+    }
+  }
+  
+
 .checkout-summary {
     max-width: 500px;
     background-color: #fefefe;
@@ -169,3 +187,49 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+/* card for members  */
+
+.basic-card {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 0;
+    background: #fefefe;
+    box-shadow: none;
+    overflow: hidden;
+    color: #0a0a0a;
+    display: -ms-grid;
+    display: flex;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 40%;
+  }
+  
+  .basic-card > :last-child {
+    margin-bottom: 0;
+  }
+  
+  .basic-card-image {
+    grid-row-end: 4;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  
+  
+  .basic-card-content {
+    border: 0;
+    margin: 0;
+    overflow: scroll;
+  }
+  
+  
+  
