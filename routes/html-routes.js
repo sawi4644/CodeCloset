@@ -33,6 +33,13 @@ module.exports = function(app) {
     // }
     res.render("cart");
   });
+
+  app.get("/shop", (req, res) => {
+    // if (req.user) {
+    //   res.redirect("/pickStyle");
+    // }
+    res.render("shop");
+  });
   // Here we've add our isAuthenticated middleware to this route.
 
   app.get("/members", isAuthenticated, (req, res) => {
