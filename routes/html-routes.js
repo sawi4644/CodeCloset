@@ -26,7 +26,6 @@ module.exports = function(app) {
     res.render("closet");
   });
 
-
   app.get("/cart", (req, res) => {
     // if (req.user) {
     //   res.redirect("/pickStyle");
