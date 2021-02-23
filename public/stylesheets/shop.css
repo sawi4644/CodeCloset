@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding:0;
+    
+}
+
+
+.bottom-row{
+    margin-top: 100px;
+}
+
+
+h3{
+    text-align: center;
+}
+h5{
+    font-size: 22px;
+}
+
+.sweatshirt,
+.tee{
+    height: 80%;
+    width: 80%;
+    display:block;
+    margin: auto;
+    padding: 10px;
+}
+
+.sweatpants,
+.legging{
+    /* height: 440px; */
+    height: 60%;
+    width: 60%;
+    display:block;
+    margin: auto;
+    padding: 10px;
+
+}
+
+button{
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+
+}
+.color-row{
+    display: block;
+    margin:auto;
+}
+
+.price-row,
+.size-row{
+    padding: 5px;
+    margin-left:10px;
+}
+.yellow{
+    background-color:#f9c02d;
+}
+
+
+.red{
+    background-color:#ff5252;
+
+}
+
+.pink{
+    background-color:#f48fb1;
+ 
+}
+
+.blue{
+    background-color:#1976d2;
+ 
+}
+
+.green{
+    background-color:#009650;
+ 
+}
+
+.grey{
+    background-color:#455a64;
+ 
+}
+.size-row{
+    display: flex;
+}
+.size-btn{
+    background-color:whitesmoke;
+    border:solid lightslategray 2px;
+    height: 40px;
+    width: 40px;
+}
+.add-to-cart,
+.view-cart{
+    width: 60%;
+    display: block;
+    margin-left: 50px;
+        height: 40px;
+    background-color:#006064;
+    color: whitesmoke;
+
+
+}
