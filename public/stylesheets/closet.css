@@ -1,0 +1,13 @@
+
+.card-section{
+    image-orientation: center;
+    padding: 200;
+}
+
+.item-name{
+    text-align: center;
+}
+
+.item-price{
+    text-align: center;
+}
