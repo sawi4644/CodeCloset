@@ -2,6 +2,8 @@ $(document).ready(() => {
   const colorBtn = $(".color-btn");
   const sweatColorBtn = $(".sweatColor-btn");
   console.log(colorBtn);
+  const leggingColorBtn = $(".leggingColor-btn")
+  const sweatpantsColorBtn = $(".sweatpantsColor-btn")
 
   colorBtn.on("click", function(e) {
     e.preventDefault();
@@ -53,4 +55,73 @@ $(document).ready(() => {
         $(".sweatshirt").attr("src", "../sketches/sweatshirts_grey.svg");
       }
   });
+
+
+  leggingColorBtn.on("click", function(e) {
+    e.preventDefault();
+    const dataColor = $(this).attr("data-color");
+    if (dataColor === "yellow") {
+      $(".legging-text").text("yellow");
+      $(".legging").attr("src", "../sketches/legging_yellow.svg");
+    } else if (dataColor === "red") {
+      $(".legging-text").text("red");
+      $(".legging").attr("src", "../sketches/legging_red.svg");
+    } else if (dataColor === "pink") {
+      $(".legging-text").text("pink");
+      $(".legging").attr("src", "../sketches/legging_pink.svg");
+    } else if (dataColor === "blue") {
+      $(".legging-text").text("blue");
+      $(".legging").attr("src", "../sketches/legging_blue.svg");
+    }
+    else if (dataColor === "green") {
+        $(".legging-text").text("green");
+        $(".legging").attr("src", "../sketches/legging_green.svg");
+      }
+    else if (dataColor === "grey") {
+        $(".legging-text").text("grey");
+        $(".legging").attr("src", "../sketches/legging_grey.svg");
+      }
+
+    });
+
+
+      sweatpantsColorBtn.on("click", function(e) {
+        e.preventDefault();
+        const dataColor = $(this).attr("data-color");
+        if (dataColor === "yellow") {
+          $(".sweatpants-text").text("yellow");
+          $(".sweatpants").attr("src", "../sketches/spants_yellow.svg");
+        } else if (dataColor === "red") {
+          $(".sweatpants-text").text("red");
+          $(".sweatpants").attr("src", "../sketches/spants_red.svg");
+        } else if (dataColor === "pink") {
+          $(".sweatpants-text").text("pink");
+          $(".sweatpants").attr("src", "../sketches/spants_pink.svg");
+        } else if (dataColor === "blue") {
+          $(".sweatpants-text").text("blue");
+          $(".sweatpants").attr("src", "../sketches/spants_blue.svg");
+        }
+        else if (dataColor === "green") {
+            $(".sweatpants-text").text("green");
+            $(".sweatpants").attr("src", "../sketches/spants_green.svg");
+          }
+        else if (dataColor === "grey") {
+            $(".sweatpants-text").text("grey");
+            $(".sweatpants").attr("src", "../sketches/spants_grey.svg");
+          }
+    
+
+
+
+
+
+  });
+
+
+
+
+
+
+
+
 });
