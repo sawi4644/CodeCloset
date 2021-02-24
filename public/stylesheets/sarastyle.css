@@ -170,11 +170,11 @@
   }
 
   /* nicks gradient style  */
-body {
+/* body {
 	background: linear-gradient(-45deg, #1B6D55 ,#DC7F6F,#6DBD99, #F6CCD6, #DC7F6F);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-}
+} */
 
 @keyframes gradient {
 	0% {
