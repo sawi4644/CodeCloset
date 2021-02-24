@@ -1,6 +1,7 @@
 $(document).ready(() => {
   const sizeBtn = $(".size-btn");
   const colorBtn = $(".color-btn");
+  const addBtn = $(".add-to-cart");
 
   sizeBtn.on("click", function(e){
     e.preventDefault();
@@ -21,8 +22,43 @@ $(document).ready(() => {
     image.attr("src", `../sketches/${category}_${dataColor}.svg`);
   });
 
+  addBtn.on("click", function(e){
+    e.stopPropagation();
+    // const item = $(this).parent().parent().parent().find(".item").attr("data-item")
+    const diggingItem = $(this).parents(".parent")
+
+    const item = diggingItem.find(".item").attr("data-item")
+    console.log(item)
+
+    const color = diggingItem.find(".color-btn.selected").attr("data-color")
+    console.log(color)
+
+    const price = diggingItem.find(".price").text()
+    console.log(price)
 
 
+    const size = diggingItem.find(".size-btn.selected").text()
+    console.log(size)
+  
+    // const item = $(this).parents().find(".item").attr("data-item")
+    // console.log(item)
+
+
+
+   
+  
+      //  $.ajax({
+      //    url: "/api/cart",
+      //    method: "POST",
+      //    data:{
+      //     //  item: 
+
+      //    }
+      //  }).then(response =>{
+      //    window.location="/api/cart"
+      //  })
+  })
+   
  
 
 
