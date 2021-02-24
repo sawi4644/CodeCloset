@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "coder5378!",
+=======
+    "password": "password",
+>>>>>>> 1bba3117e51a2b9663b6fffa86b339dbc5c9ba7e
     "database": "code_closet",
     "host": "127.0.0.1",
     "dialect": "mysql"

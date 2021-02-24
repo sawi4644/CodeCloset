@@ -15,21 +15,23 @@
 </head>
 
 <body>
-  <div class="hero-section">
-  <div class="hero-section-text">
-   <h4>Code Closet</h4>
+ <div class="marketing-site-hero">
+  <div class="marketing-site-hero-content">
+    <h1>You look good.</h1>
   </div>
 </div>
 
-
-
-  <nav class="navbar navbar-default">
+  {{!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header"> --}}
       {{#if user}}
-      <a class="navbar-brand" href="/logout">
+        <ul class="menu menu-hover-lines" id="ulnav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+      {{!-- <a class="navbar-brand" href="/logout">
         Logout
-      </a>
+      </a> --}}
       {{/if}}
     </div>
   </div>
