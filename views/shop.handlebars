@@ -1,152 +1,178 @@
+    <link href="stylesheets/shop.css" rel="stylesheet">
 
-<link href="stylesheets/sarastyle.css" rel="stylesheet">
-
-<div class="container">
-  <ul class="menu menu-hover-lines" id="ulnav">
-    <li><a href="/">Home</a></li>
-    <li class="active"><a href="#">View Closet</a></li>
-    <li><a href="shop">Shop</a></li>
-    <li><a href="cart">View Cart</a></li>
-    <li><a href="#">Log Out</a></li>
-  </ul>
-</div>
-</div>
-</div>
-<br>
+   <link href="stylesheets/sarastyle.css" rel="stylesheet">
+ 
   
   <div class="container">
-      <div class="row top-row">
-
-          <div class="col-sm-3">
-              <h1 class="item">Glynis cute Tee</h1>
-                <img src="../sketches/tshirts_red.svg" alt="tee sketch image" class="tee" >
+    <div class="row top-row">
+  
+      <div class="col-sm-6 item-container">
+        <div class="row parent">
+          <div class="col-sm-6">
+            <h3 data-item= "Glynis Cute raglan Tee" class="item" >Glynis Cute raglan Tee</h3>
+            <img data-category="tshirts" src="../sketches/tshirts_red.svg" alt="tee sketch image" class="tee">
           </div>
-          <div class="col-sm-3">
-              <div class="row color-row">
-                <h1 class="colors">Colors:</h1>
-              <button class="yellow">yellow</button> 
-              <button class="red">red</button>
-              <button class="pink">pink</button> 
-              <button class="blue">blue</button>
-              <button class="pink">green</button> 
-              <button class="blue">grey</button> 
-              </div>
-             
-             <div class="row price-row">
-              <h1 class="price">Price:$29.99</h1>
-             </div>
-             
-             <div class="row size-row">
-              <h1 class="size">Size:</h1> 
-              <button class="size-btn">S</button> 
-              <button class="size-btn">M</button>
-              <button class="size-btn">L</button> 
-             </div>
-
-             <div class="row add-row">
-              <button class="add-to-cart">ADD to Cart</button> 
-             </div>         
-                 
+          <div class="col-sm-6">
+            <div class="row color-row">
+              <h5 class="colors">Colors:
+                <span class="color-text"></span>
+              </h5>
+              <button data-color="yellow" class="color-btn yellow"></button>
+              <button data-color="red" class="color-btn red"></button>
+              <button data-color="pink" class="color-btn  pink"></button>
+              <button data-color="blue" class="color-btn  blue"></button>
+              <button data-color="green" class="color-btn green"></button>
+              <button data-color="grey" class="color-btn grey"></button>
+            </div>
+  
+            <div class="row price-row">
+              <h5 class="price">Price:$29.99</h5>
+            </div>
+  
+            <div class="row size-row">
+              <h5 class="size">Size:</h5>
+              <button data-size="S" class="size-btn">S</button>
+              <button data-size="M" class="size-btn">M</button>
+              <button data-size="L" class="size-btn">L</button>
+  
+            </div>
+  
+            <div class="row add-row">
+              <button class="add-to-cart">ADD to Cart</button>
+            </div>
+  
+  
           </div>
-          <div class="col-sm-3">
-               <h1 class="item">Sara stylish Sweatshirt</h1>
-                <img src="../sketches/sweatshirts_grey.svg" alt="sweatshirt sketch image" class="sweatshirt" >
-          </div>
-          <div class="col-sm-3">
-                    <div class="row color-row">
-                <h1 class="colors">Colors:</h1>
-              <button class="yellow">yellow</button> 
-              <button class="red">red</button>
-              <button class="pink">pink</button> 
-              <button class="blue">blue</button>
-              <button class="pink">green</button> 
-              <button class="blue">grey</button> 
-              </div>
-             
-             <div class="row price-row">
-              <h1 class="price">Price:$39.99</h1>
-             </div>
-             
-             <div class="row size-row">
-              <h1 class="size">Size:</h1> 
-              <button class="size-btn">S</button> 
-              <button class="size-btn">M</button>
-              <button class="size-btn">L</button> 
-             </div>
-
-             <div class="row add-row">
-              <button class="add-to-cart">ADD to Cart</button> 
-             </div>   
-          </div>
-
+        </div>
       </div>
-
-        
-             <div class="row bottom-row">
-
-          <div class="col-sm-3">
-              <h1 class="item">Olivia skinny Legging</h1>
-                <img src="../sketches/legging_pink.svg" alt="legging sketch image" class="legging" >
+  
+      <div class="col-sm-6 item-container">
+        <div class="row parent">
+          <div class="col-sm-6">
+            <h3 data-item= "Sara Stylish Sweatshirt" class="item">Sara Stylish Sweatshirt</h3>
+            <img data-category="sweatshirts" src="../sketches/sweatshirts_grey.svg" alt="sweatshirt sketch image"
+              class="sweatshirt">
           </div>
-          <div class="col-sm-3">
-              <div class="row color-row">
-                <h1 class="colors">Colors:</h1>
-              <button class="yellow">yellow</button> 
-              <button class="red">red</button>
-              <button class="pink">pink</button> 
-              <button class="blue">blue</button>
-              <button class="pink">green</button> 
-              <button class="blue">grey</button> 
-              </div>
-             
-             <div class="row price-row">
-              <h1 class="price">Price:$29.99</h1>
-             </div>
-             
-             <div class="row size-row">
-              <h1 class="size">Size:</h1> 
-              <button class="size-btn">S</button> 
+          <div class="col-sm-6">
+            <div class="row color-row">
+              <h5 class="colors">Colors:
+                <span class="color-text"></span>
+              </h5>
+              <button data-color="yellow" class="color-btn yellow"></button>
+              <button data-color="red" class="color-btn  red"></button>
+              <button data-color="pink" class="color-btn  pink"></button>
+              <button data-color="blue" class="color-btn blue"></button>
+              <button data-color="green" class="color-btn green"></button>
+              <button data-color="grey" class="color-btn  grey"></button>
+            </div>
+  
+            <div class="row price-row">
+              <h5 class="price">Price:$39.99</h5>
+            </div>
+  
+            <div class="row size-row">
+              <h5 class="size">Size:</h5>
+              <button class="size-btn">S</button>
               <button class="size-btn">M</button>
-              <button class="size-btn">L</button> 
-             </div>
-
-             <div class="row add-row">
-              <button class="add-to-cart">ADD to Cart</button> 
-             </div>         
-                 
+              <button class="size-btn">L</button>
+  
+            </div>
+  
+            <div class="row add-row">
+              <button class="add-to-cart">ADD to Cart</button>
+            </div>
           </div>
-          <div class="col-sm-3">
-               <h1 class="item">Nick chic Sweatpants</h1>
-                <img src="../sketches/spants_blue.svg" alt="sweatpants sketch image" class="sweatpants" >
+  
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row bottom-row">
+  
+      <div class="col-sm-6 item-container">
+        <div class="row parent">
+          <div class="col-sm-6">
+            <h3 data-item="Olivia Skinny Legging" class="item">Olivia Skinny Legging</h3>
+            <img data-category="legging" src="../sketches/legging_pink.svg" alt="legging sketch image" class="legging">
           </div>
-          <div class="col-sm-3">
-                    <div class="row color-row">
-                <h1 class="colors">Colors:</h1>
-              <button class="yellow">yellow</button> 
-              <button class="red">red</button>
-              <button class="pink">pink</button> 
-              <button class="blue">blue</button>
-              <button class="pink">green</button> 
-              <button class="blue">grey</button> 
-              </div>
-             
-             <div class="row price-row">
-              <h1 class="price">Price:$29.99</h1>
-             </div>
-             
-             <div class="row size-row">
-              <h1 class="size">Size:</h1> 
-              <button class="size-btn">S</button> 
+          <div class="col-sm-6">
+            <div class="row color-row">
+              <h5 class="colors">Colors:
+                <span class="color-text"></span>
+              </h5>
+              <button data-color="yellow" class="color-btn yellow"></button>
+              <button data-color="red" class="color-btn  red"></button>
+              <button data-color="pink" class="color-btn pink"></button>
+              <button data-color="blue" class="color-btn blue"></button>
+              <button data-color="green" class="color-btn green"></button>
+              <button data-color="grey" class="color-btn grey"></button>
+            </div>
+  
+            <div class="row price-row">
+              <h5 class="price">Price:$29.99</h5>
+            </div>
+  
+            <div class="row size-row">
+              <h5 class="size">Size:</h5>
+              <button class="size-btn">S</button>
               <button class="size-btn">M</button>
-              <button class="size-btn">L</button> 
-             </div>
-
-             <div class="row add-row">
-              <button class="add-to-cart">ADD to Cart</button> 
-             </div>   
+              <button class="size-btn">L</button>
+  
+            </div>
+  
+            <div class="row add-row">
+              <button class="add-to-cart">ADD to Cart</button>
+            </div>
+  
           </div>
-
-  </div>
+        </div>
+      </div>
+  
+  
+      <div class="col-sm-6 item-container">
+        <div class="row parent">
+  
+          <div class="col-sm-6">
+            <h3 data-item="Nick Chic Sweatpants" class="item">Nick Chic Sweatpants</h3>
+            <img data-category="spants" src="../sketches/spants_blue.svg" alt="sweatpants sketch image"
+              class="sweatpants">
+          </div>
+          <div class="col-sm-6">
+            <div class="row color-row">
+              <h5 class="colors">Colors:
+                <span class="color-text"></span>
+              </h5>
+              <button data-color="yellow" class="color-btn  yellow"></button>
+              <button data-color="red" class="color-btn red"></button>
+              <button data-color="pink" class="color-btn  pink"></button>
+              <button data-color="blue" class="color-btn  blue"></button>
+              <button data-color="green" class="color-btn sweatpantsColor-btn green"></button>
+              <button data-color="grey" class="color-btn grey"></button>
+            </div>
+  
+            <div class="row price-row">
+              <h5 class="price">Price:$29.99</h5>
+            </div>
+  
+            <div class="row size-row">
+              <h5 class="size">Size:</h5>
+              <button class="size-btn">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+  
+            </div>
+  
+            <div class="row add-row">
+              <button class="add-to-cart">ADD to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+    </div>
 
   
-  <script type="text/javascript" src="js/closet.js"></script>
+  <script type="text/javascript" src="js/shop.js"></script>
