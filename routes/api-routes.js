@@ -50,4 +50,44 @@ module.exports = function(app) {
       });
     }
   });
+
+ 
+
+  app.post("/api/cart", (req, res) => {
+    console.log(req.body)
+     db.Closet.create({
+       item: req.body.item,
+       color: req.body.color,
+       size: req.body.size,
+       price:req.body.price
+     })
+    .then(function(dbCloset){
+      res.json(dbCloset)
+    }).catch(function(err){
+      console.log(err)
+    })
+
+  });
+
+   app.get("/cart", (req, res) => {
+    console.log(req.body)
+    db.Closet.findAll(req.body)
+    .then(function(data){
+      res.json(data)
+    }).catch(function(err){
+      console.log(err)
+    })
+
+  });
+
+
+
+
+
+
+
+
+
+
+
 };
