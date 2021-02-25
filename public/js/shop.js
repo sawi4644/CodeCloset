@@ -45,7 +45,7 @@ $(document).ready(() => {
       const color = diggingItem.find(".color-btn.selected").attr("data-color");
       console.log(color);
 
-      const price = diggingItem.find(".price").text();
+      const price = diggingItem.find(".price").val();
       console.log(price);
 
       const size = diggingItem.find(".size-btn.selected").text();

@@ -54,28 +54,33 @@ module.exports = function(app) {
  
 
   app.post("/api/cart", (req, res) => {
-    console.log(req.body)
+    let body = req.body;
+    console.log({body})
      db.Closet.create({
        item: req.body.item,
        color: req.body.color,
        size: req.body.size,
-       price:req.body.price
+       price:+(req.body.price),
+       imgFileName: req.body.imgFileName
      })
     .then(function(dbCloset){
       res.json(dbCloset)
+      console.log({dbCloset})
     }).catch(function(err){
-      console.log(err)
+      console.log({err})
     })
 
   });
 
    app.get("/cart", (req, res) => {
-    console.log(req.body)
+     let body = req.body
+    console.log({body})
     db.Closet.findAll(req.body)
     .then(function(data){
       res.json(data)
+      console.log({data})
     }).catch(function(err){
-      console.log(err)
+      console.log({err})
     })
 
   });
