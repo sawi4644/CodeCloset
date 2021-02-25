@@ -55,7 +55,7 @@ $(document).ready(() => {
       console.log(imgFileName)
 
       $.ajax({
-        url: "/api/cart",
+        url: "/cart",
         method: "POST",
         data: {
           item,
