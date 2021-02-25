@@ -22,25 +22,26 @@
  
 
     <div class="checkout-summary-item">
-      <img src="sketches/{{imgFileName}}" height="150" width="100">
+      <img src="{{imgFileName}}" height="150" width="100">
       <div class="item-name">
         <p>{{item}}</p>
-        <p><span class="title">Color:{{color}}</span>Blue</p>
-        <p><span class="title">Size:{{size}}</span>M</p>
+        <p><span class="title">Color:{{color}}</span></p>
+        <p><span class="title">Size:{{size}}</span></p>
       </div>
       <div class="item-price">
-        <p class="title">{{price}}</p>
+        <p class="title">$<span>{{price}}</span></p>
         <button>Remove</button>
         <br>
         <button> Edit</button>
       </div>
     </div>
+
     {{/each}}
     <div class="checkout-summary-details">
       <div class="left">
-        <p><strong>Subtotal:{{price}}</strong></p>
+        <p><strong>Subtotal:${{price}}</strong></p>
 
-        <p><strong>Total:{{price}}</strong></p>
+        <p><strong>Total:${{price}}</strong></p>
       </div>
       <div class="right">
 
@@ -49,3 +50,5 @@
     <button class="button expanded">Finish Order</button>
   </div>
 </div>
+
+ <script type="text/javascript" src="js/shop.js"></script>
