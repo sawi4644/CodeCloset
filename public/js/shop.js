@@ -33,8 +33,7 @@ $(document).ready(() => {
     image.attr("src", `../sketches/${category}_${dataColor}.svg`);
   });
 
-  addBtn
-    .on("click", function(e) {
+  addBtn.on("click", function(e) {
       e.stopPropagation();
 
       const diggingItem = $(this).parents(".parent");
@@ -54,6 +53,16 @@ $(document).ready(() => {
       const imgFileName = diggingItem.find("img").attr("src")
       console.log(imgFileName)
 
+      // const data = {
+      //       item,
+      //       color,
+      //       price,
+      //       size,
+      //       imgFileName
+      // }
+
+      // postAPI(data)
+
       $.ajax({
         url: "/cart",
         method: "POST",
@@ -71,5 +80,30 @@ $(document).ready(() => {
       })
       .catch(function(err){console.log(err)});
     })
+
+
+
+
+
+
+    // const postAPI = (data) => {
+//  $.ajax({
+//     url: "/cart",
+//     data: data,
+//     method: "POST",
+//   })
+//      .then(function(response){
+//         console.log(response)
+//         window.location = "/cart";
+//       })
+//       .catch(function(err){console.log(err)});
+
+
+
+// }
   
 });
+
+
+
+

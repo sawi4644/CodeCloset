@@ -64,6 +64,7 @@ module.exports = function(app) {
      })
     .then(function(dbCloset){
       res.json(dbCloset)
+      // console.log(dbCloset)
     }).catch(function(err){
       console.log(err)
     })

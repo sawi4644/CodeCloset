@@ -41,9 +41,9 @@ module.exports = function(app) {
   });
 
   app.get("/shop", (req, res) => {
-    // if (req.user) {
-    //   res.redirect("/pickStyle");
-    // }
+    if (!req.user) {
+      res.redirect("/login");
+    }
     res.render("shop");
   });
 
