@@ -1,7 +1,9 @@
+module.exports=
 {
   "development": {
     "username": "root",
-    "password": "password",
+    password:process.env.DBPASSWORD,
+    // "password": "password",
     "database": "code_closet",
     "host": "127.0.0.1",
     "dialect": "mysql"

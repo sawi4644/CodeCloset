@@ -15,10 +15,15 @@ module.exports = function(sequelize, DataTypes) {
     price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false
+    },
+    imgFileName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    
     }
   });
 
   return Closet;
 };
 
-console.log("Closet");
+

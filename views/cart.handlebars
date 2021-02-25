@@ -18,26 +18,30 @@
       <h5>Your Order</h5>
       <h5> Items</h5>
     </div>
+    {{#each allItems}}
+ 
 
     <div class="checkout-summary-item">
-      <img src="../sketches/sweatshirts_blue.svg" height="150" width="100">
+      <img src="{{imgFileName}}" height="150" width="100">
       <div class="item-name">
-        <a>Stylish Sweatshirt</a>
-        <p><span class="title">Color:</span>Blue</p>
-        <p><span class="title">Size:</span>M</p>
+        <p>{{item}}</p>
+        <p><span class="title">Color:{{color}}</span></p>
+        <p><span class="title">Size:{{size}}</span></p>
       </div>
       <div class="item-price">
-        <p class="title">$24.99</p>
-        <a href="#">Remove</a>
+        <p class="title">$<span>{{price}}</span></p>
+        <button>Remove</button>
         <br>
-        <a href="#"> Edit</a>
+        <button> Edit</button>
       </div>
     </div>
+
+    {{/each}}
     <div class="checkout-summary-details">
       <div class="left">
-        <p><strong>Subtotal:</strong></p>
-        <p><strong>Tax:</strong></p>
-        <p><strong>Total:</strong></p>
+        <p><strong>Subtotal:${{price}}</strong></p>
+
+        <p><strong>Total:${{price}}</strong></p>
       </div>
       <div class="right">
 
@@ -46,3 +50,5 @@
     <button class="button expanded">Finish Order</button>
   </div>
 </div>
+
+ <script type="text/javascript" src="js/shop.js"></script>

@@ -1,8 +1,7 @@
-// Requiring path to so we can use relative routes to our HTML files
-// const path = require("path");
 
-// Requiring our custom middleware for checking if a user is logged in
+const db = require("../models")
 const isAuthenticated = require("../config/middleware/isAuthenticated");
+const { decodeBase64 } = require("bcryptjs");
 
 module.exports = function(app) {
   app.get("/", (req, res) => {
@@ -27,18 +26,28 @@ module.exports = function(app) {
   });
 
   app.get("/cart", (req, res) => {
-    // if (req.user) {
-    //   res.redirect("/pickStyle");
-    // }
-    res.render("cart");
+
+    if (!req.user) {
+      res.redirect("/login");
+    }
+    db.Closet.findAll()
+    .then(dbCloset => {
+      res.render("cart", {
+        allItems: dbCloset
+      })
+
+    })
+   
   });
 
   app.get("/shop", (req, res) => {
-    // if (req.user) {
-    //   res.redirect("/pickStyle");
-    // }
+    if (!req.user) {
+      res.redirect("/login");
+    }
     res.render("shop");
   });
+
+
   // Here we've add our isAuthenticated middleware to this route.
 
   app.get("/members", isAuthenticated, (req, res) => {
