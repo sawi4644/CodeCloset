@@ -13,7 +13,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     price: {
-      type: DataTypes.DECIMAL(3, 2),
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false
+    },
+    imgFileName:{
+      type: DataTypes.STRING,
       allowNull: false
     }
   });
