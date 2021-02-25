@@ -47,23 +47,22 @@ $(document).ready(() => {
 
    
   
-      //  $.ajax({
-      //    url: "/api/cart",
-      //    method: "POST",
-      //    data:{
-      //     //  item: 
+       $.ajax({
+         url: "/api/cart",
+         method: "POST",
+         data:{
+           item,
+           color,
+           size,
+           price
 
-      //    }
-      //  }).then(response =>{
-      //    window.location="/api/cart"
-      //  })
+         }
+       }).then(response =>{
+         window.location="/api/cart"
+       }).catch(err=>console.log(err))
+
+
   })
    
  
-
-
-
-
-
-
 });
