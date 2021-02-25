@@ -60,7 +60,7 @@ module.exports = function(app) {
        item: req.body.item,
        color: req.body.color,
        size: req.body.size,
-       price:req.body.price,
+       price:+(req.body.price),
        imgFileName: req.body.imgFileName
      })
     .then(function(dbCloset){
