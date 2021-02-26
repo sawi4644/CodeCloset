@@ -80,7 +80,7 @@ module.exports = function(app) {
         id: req.params.id
       }
     }).then(dbItem =>
-      {console.log(dbItem)
+      {console.log(dbItem.item)
       res.render("item",  dbItem)}
       );
 
