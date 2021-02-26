@@ -53,15 +53,7 @@ $(document).ready(() => {
       const imgFileName = diggingItem.find("img").attr("src")
       console.log(imgFileName)
 
-      // const data = {
-      //       item,
-      //       color,
-      //       price,
-      //       size,
-      //       imgFileName
-      // }
-
-      // postAPI(data)
+  
 
       $.ajax({
         url: "/cart",
@@ -84,23 +76,6 @@ $(document).ready(() => {
 
 
 
-
-
-    // const postAPI = (data) => {
-//  $.ajax({
-//     url: "/cart",
-//     data: data,
-//     method: "POST",
-//   })
-//      .then(function(response){
-//         console.log(response)
-//         window.location = "/cart";
-//       })
-//       .catch(function(err){console.log(err)});
-
-
-
-// }
   
 });
 

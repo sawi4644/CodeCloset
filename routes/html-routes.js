@@ -30,10 +30,30 @@ module.exports = function(app) {
     if (!req.user) {
       res.redirect("/login");
     }
-    db.Closet.findAll()
+    db.Closet.findAll(
+      {raw: true}
+      )
     .then(dbCloset => {
+      console.log(dbCloset)
       res.render("cart", {
         allItems: dbCloset
+      })
+
+    })
+   
+  });
+
+  app.get("/cart/:id", (req, res) => {
+
+   const id = req.params.id
+    db.Closet.findOne({
+      where: {
+        id
+      }
+    })
+    .then(dbItem => {
+      res.render("cart", {
+        Item: dbItem
       })
 
     })
