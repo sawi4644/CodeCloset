@@ -34,7 +34,7 @@ module.exports = function(app) {
       {raw: true}
       )
     .then(dbCloset => {
-      console.log(dbCloset)
+      // console.log(dbCloset)
       res.render("cart", {
         allItems: dbCloset
       })

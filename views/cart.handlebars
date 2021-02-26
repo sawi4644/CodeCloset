@@ -25,14 +25,14 @@
       <img src="{{this.imgFileName}}" height="150" width="100">
       <div class="item-name">
         <p>{{this.item}}</p>
-        <p><span class="title">Color:{{color}}</span></p>
-        <p><span class="title">Size:{{size}}</span></p>
+        <p><span class="title">Color:{{this.color}}</span></p>
+        <p><span class="title">Size:{{this.size}}</span></p>
       </div>
       <div class="item-price">
         <p class="title">$<span>{{this.price}}</span></p>
-        <button>Remove</button>
+        <button class="remove" data-id="{{this.id}}">Remove</button>
         <br>
-        <button> Edit</button>
+        <button class="edit" data-id="{{this.id}}"> Edit</button>
       </div>
     </div>
 
@@ -52,3 +52,4 @@
 </div>
 
  <script type="text/javascript" src="js/shop.js"></script>
+  <script type="text/javascript" src="js/cart.js"></script>

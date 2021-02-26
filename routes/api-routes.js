@@ -68,12 +68,13 @@ module.exports = function(app) {
 
   });
 
+
   
 
  
 
   app.post("/cart", (req, res) => {
-    console.log(req.body)
+    // console.log(req.body)
      db.Closet.create({
        item: req.body.item,
        color: req.body.color,
@@ -90,16 +91,22 @@ module.exports = function(app) {
 
   });
 
-  //  app.get("/cart", (req, res) => {
-  //   console.log(req.body)
-  //   db.Closet.findAll(req.body)
-  //   .then(function(data){
-  //     res.json(data)
-  //   }).catch(function(err){
-  //     console.log(err)
-  //   })
+ 
+  app.delete("/cart/:id", (req, res) => {
+    console.log(req.params.id)
+     db.Closet.destroy({
+      where: {
+        id: req.params.id
+      }
+     })
+    .then(function(dbItem){
+      res.send(200)
+      // console.log(dbCloset)
+    }).catch(function(err){
+      console.log(err)
+    })
 
-  // });
+  });
 
 
 
