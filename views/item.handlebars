@@ -1,0 +1,49 @@
+
+ 
+  
+  <div class="container">
+    <div class="row top-row">
+  
+      <div class="col-sm-6 item-container">
+        <div class="row parent">
+          <div class="col-sm-6">
+            <h3>{{this.item}}</h3>
+            <img  src="{{this.imgFileName}}" alt="{{this.imgFileName}}">
+          </div>
+          <div class="col-sm-6">
+            <div class="row color-row">
+              <h5 class="colors">Colors:
+                <span class="color-text"></span>
+              </h5>
+              <button data-color="yellow" class="color-btn yellow"></button>
+              <button data-color="red" class="color-btn red"></button>
+              <button data-color="pink" class="color-btn  pink"></button>
+              <button data-color="blue" class="color-btn  blue"></button>
+              <button data-color="green" class="color-btn green"></button>
+              <button data-color="grey" class="color-btn grey"></button>
+            </div>
+  
+            <div class="row price-row">
+              <h5 >Price:$<span class="price">{{this.price}}</span></h5>
+            </div>
+  
+            <div class="row size-row">
+              <h5 class="size">Size:</h5>
+              <button data-size="S" class="size-btn">S</button>
+              <button data-size="M" class="size-btn">M</button>
+              <button data-size="L" class="size-btn">L</button>
+  
+            </div>
+  
+            <div class="row add-row">
+              <button class="add-to-cart">UPDATE to Cart</button>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+
+       <script type="text/javascript" src="js/shop.js"></script>
+  <script type="text/javascript" src="js/cart.js"></script>
+  

@@ -67,6 +67,30 @@ module.exports = function(app) {
     res.render("shop");
   });
 
+  app.get("/item/:id", (req, res) => {
+    console.log(req.body)
+    if (!req.user) {
+      res.redirect("/login");
+    }
+    db.Closet.findOne(
+      {raw: true},
+      {
+  
+      where:{
+        id: req.params.id
+      }
+    }).then(dbItem =>
+      {console.log(dbItem)
+      res.render("item",  dbItem)}
+      );
+
+   
+    
+
+    
+ 
+  });
+
 
   // Here we've add our isAuthenticated middleware to this route.
 

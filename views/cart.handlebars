@@ -4,9 +4,11 @@
   <ul class="menu menu-hover-lines" id="ulnav">
     <li><a href="/">Home</a></li>
     <li><a href="closet">View Closet</a></li>
-    <li><a href="shop">Shop</a></li>
+    <li><a href="shop">Shop</a></li><li><a href="item">Log Out</a></li>
     <li class="active"><a href="#">View Cart</a></li>
     <li><a href="#">Log Out</a></li>
+   
+      
   </ul>
 </div>
 </div>
@@ -22,18 +24,17 @@
  
 
     <div class="checkout-summary-item">
+      
       <img src="{{this.imgFileName}}" height="150" width="100">
-      <div class="item-name">
-        <p>{{this.item}}</p>
-        <p><span class="title">Color:{{this.color}}</span></p>
-        <p><span class="title">Size:{{this.size}}</span></p>
-      </div>
-      <div class="item-price">
-        <p class="title">$<span>{{this.price}}</span></p>
+     
+        <p class="item-name">{{this.item}}</p>
+        <p><span class="item-color">Color:{{this.color}}</span></p>
+        <p><span class="item-size">Size:{{this.size}}</span></p>
+        <p class="item-price">$<span>{{this.price}}</span></p>
         <button class="remove" data-id="{{this.id}}">Remove</button>
         <br>
-        <button class="edit" data-id="{{this.id}}"> Edit</button>
-      </div>
+        <a href="/item/{{this.id}}" class="edit" data-id="{{this.id}}"> Edit</a>
+     
     </div>
 
     {{/each}}
