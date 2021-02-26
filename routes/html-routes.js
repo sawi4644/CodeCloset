@@ -30,7 +30,9 @@ module.exports = function(app) {
     if (!req.user) {
       res.redirect("/login");
     }
-    db.Closet.findAll()
+    db.Closet.findAll({
+      //where: userid=req.user.id
+    })
     .then(dbCloset => {
       res.render("cart", {
         allItems: dbCloset
