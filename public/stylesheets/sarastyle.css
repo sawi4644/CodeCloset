@@ -1,6 +1,6 @@
 
 .marketing-site-hero {
-    background: url("/img/head.gif") top right no-repeat;
+    background: url("/img/final.gif") top right no-repeat;
     height: 25vh;
     background-size: cover;
     display: -webkit-flex;
@@ -26,6 +26,7 @@
   
   .marketing-site-hero-content h1 {
     font-size: 32px;
+    text-align: left;
   }
   
   .marketing-site-hero-content .button.round {
@@ -164,8 +165,13 @@
       display: flex;
       justify-content: space-between;
       padding: 10px;
+      
   }
-    
+ 
+.carBod{
+   padding: 30%;
+
+}
   #cart{
     display: flex;
   }
@@ -233,4 +239,8 @@
   }
   
   
+  /* footer  */
+  .gh-ic{
+      padding: 2%;
+  }
   
