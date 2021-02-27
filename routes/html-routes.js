@@ -68,20 +68,22 @@ module.exports = function(app) {
   });
 
   app.get("/item/:id", (req, res) => {
-    console.log(req.body)
+    console.log(req.params)
     if (!req.user) {
-      res.redirect("/login");
+      return res.redirect("/login");
     }
     db.Closet.findOne(
-      {raw: true},
-      {
-  
+     
+      {   
+
       where:{
         id: req.params.id
       }
     }).then(dbItem =>
-      {console.log(dbItem.item)
-      res.render("item",  dbItem)}
+      { console.log(dbItem.dataValues)
+      
+      res.render("item", dbItem.dataValues)
+    }
       );
 
    
