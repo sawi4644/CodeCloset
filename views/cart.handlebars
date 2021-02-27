@@ -6,9 +6,15 @@
   <ul class="menu menu-hover-lines" id="ulnav">
     <li><a href="/">Home</a></li>
     <li><a href="closet">View Closet</a></li>
-    <li><a href="shop">Shop</a></li>
+    <li><a href="shop">Shop</a></li><li><a href="item">Log Out</a></li>
     <li class="active"><a href="#">View Cart</a></li>
+<<<<<<< HEAD
     <li><a href="/logout">Log Out</a></li>
+=======
+    <li><a href="#">Log Out</a></li>
+   
+      
+>>>>>>> b17301a4b0ed3957bbe02f670c7ff5d2f6b2ee29
   </ul>
 </div>
 </div>
@@ -21,30 +27,29 @@
       <h5>Your Order</h5>
       <h5> Items</h5>
     </div>
-    {{#each allItems}}
+    {{#each this.allItems}}
  
 
     <div class="checkout-summary-item">
-      <img src="{{imgFileName}}" height="150" width="100">
-      <div class="item-name">
-        <p>{{item}}</p>
-        <p><span class="title">Color:{{color}}</span></p>
-        <p><span class="title">Size:{{size}}</span></p>
-      </div>
-      <div class="item-price">
-        <p class="title">$<span>{{price}}</span></p>
-        <button>Remove</button>
+      
+      <img src="{{this.imgFileName}}" height="150" width="100">
+     
+        <p class="item-name">{{this.item}}</p>
+        <p><span class="item-color">Color:{{this.color}}</span></p>
+        <p><span class="item-size">Size:{{this.size}}</span></p>
+        <p class="item-price">$<span>{{this.price}}</span></p>
+        <button class="remove" data-id="{{this.id}}">Remove</button>
         <br>
-        <button> Edit</button>
-      </div>
+        <a href="/item/{{this.id}}" class="edit" data-id="{{this.id}}"> Edit</a>
+     
     </div>
 
     {{/each}}
     <div class="checkout-summary-details">
       <div class="left">
-        <p><strong>Subtotal:${{price}}</strong></p>
+        <p><strong>Subtotal:${{this.price}}</strong></p>
 
-        <p><strong>Total:${{price}}</strong></p>
+        <p><strong>Total:${{this.price}}</strong></p>
       </div>
       <div class="right">
 
@@ -170,4 +175,5 @@
 </footer>
 
  <script type="text/javascript" src="js/cart.js"></script>
+  <script type="text/javascript" src="js/shop.js"></script>
 
