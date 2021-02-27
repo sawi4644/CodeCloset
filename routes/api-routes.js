@@ -50,27 +50,6 @@ module.exports = function(app) {
       });
     }
   });
-
-  
-  // app.get("/cart/:id", (req, res) => {
-  //   console.log(req.params.id)
-  //    db.Closet.findOne({
-  //     where: {
-  //       id
-  //     }
-  //    })
-  //   .then(function(dbItem){
-  //     res.json(dbItem)
-  //     // console.log(dbCloset)
-  //   }).catch(function(err){
-  //     console.log(err)
-  //   })
-
-  // });
-
-
-  
-
  
 
   app.post("/cart", (req, res) => {
@@ -108,32 +87,6 @@ module.exports = function(app) {
     })
 
   });
-
-  // app.put("/cart/:id", (req, res) => {
-  //   console.log(req.body)
-  //    db.Closet.update(req.body, {
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //    })
-  //   .then(function(dbItem){
-  //     res.json(dbItem)
-  //     // console.log(dbCloset)
-  //   }).catch(function(err){
-  //     console.log(err)
-  //   })
-
-  // });
-
-
- 
-
-
-
-
-
-
-
 
 
 };

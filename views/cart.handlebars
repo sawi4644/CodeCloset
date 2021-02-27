@@ -7,7 +7,6 @@
     <li><a href="/">Home</a></li>
     <li><a href="closet">View Closet</a></li>
     <li><a href="shop">Shop</a></li>
-    <li><a href="item">Log Out</a></li>
     <li class="active"><a href="#">View Cart</a></li>
     <li><a href="/logout">Log Out</a></li>
   </ul>
@@ -37,7 +36,7 @@
         <p class="item-price">$<span>{{this.price}}</span></p>
       </div>
         <div>
-          <button class="btn btn-danger" data-id="{{this.id}}"><i class="fas fa-trash"></i></button>
+          <button class="btn btn-danger remove" data-id="{{this.id}}"><i class="fas fa-trash"></i></button>
           <br>
           <a href="/item/{{this.id}}" class="btn btn-primary" data-id="{{this.id}}"> Edit</a>
         </div>
