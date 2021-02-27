@@ -71,6 +71,28 @@ module.exports = function(app) {
 
   });
 
+  app.put("/item/:id", (req, res) => {
+    console.log(req.body)
+    console.log(req.params)
+    const id = req.params.id
+    console.log(id)
+     db.Closet.update(req.body,
+       {
+         where:{
+             id
+         }
+       }
+ 
+     )
+    .then(function(dbCloset){
+      res.json(dbCloset)
+      console.log(dbCloset)
+    }).catch(function(err){
+      console.log(err)
+    })
+
+  });
+
  
   app.delete("/cart/:id", (req, res) => {
     console.log(req.params.id)
