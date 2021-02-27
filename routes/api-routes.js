@@ -28,7 +28,7 @@ module.exports = function(app) {
       .catch(err => {
         res.status(401).json(err);
       });
-  });
+  });    
 
   // Route for logging user out
   app.get("/logout", (req, res) => {
