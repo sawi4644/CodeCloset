@@ -1,7 +1,7 @@
 
 .card-section{
     image-orientation: center;
-    padding: 200;
+    padding: 100px;
 }
 
 .item-name{
@@ -10,4 +10,8 @@
 
 .item-price{
     text-align: center;
+}
+
+.bgnd{
+    background-image:url("/img/construct.jpg");
 }
