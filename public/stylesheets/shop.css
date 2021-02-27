@@ -121,6 +121,7 @@ button{
     box-shadow:0px 0px 10px black;
 
 }
+.update-to-cart,
 .add-to-cart,
 .view-cart{
     width: 60%;

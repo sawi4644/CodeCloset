@@ -68,10 +68,12 @@ $(document).ready(() => {
       })
       .then(function(response){
         console.log(response)
-        window.location = "/cart";
+        // window.location = "/shop";
       })
       .catch(function(err){console.log(err)});
     })
+
+
 
 
 
