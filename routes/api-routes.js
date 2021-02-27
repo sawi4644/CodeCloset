@@ -80,7 +80,8 @@ module.exports = function(app) {
        color: req.body.color,
        size: req.body.size,
        price:req.body.price,
-       imgFileName:req.body.imgFileName
+       imgFileName:req.body.imgFileName,
+       UserId: req.user.id
      })
     .then(function(dbCloset){
       res.json(dbCloset)
@@ -125,7 +126,7 @@ module.exports = function(app) {
   });
 
 
-
+ 
 
 
 
