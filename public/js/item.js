@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-
+  const sizeBtn = $(".size-btn");
   const updateBtn = $(".update-to-cart")
   const colorBtn = $(".color-btn");
   const addBtn = $(".add-to-cart");
@@ -26,6 +26,16 @@ $(document).ready(()=>{
 
     image.attr("src", `../${category}_${dataColor}.svg`);
   });
+
+
+  sizeBtn.on("click", function(e) {
+    e.preventDefault();
+    $(this)
+      .parent()
+      .find(".size-btn")
+      .removeClass("selected");
+    $(this).addClass("selected");
+  });
  
 
 updateBtn.on("click", function(){
@@ -42,14 +52,14 @@ updateBtn.on("click", function(){
    const imgFileName = diggingItem.find("img").attr("src")
    console.log(imgFileName)
 
-   const color = diggingItem.find(".color-btn .selected").attr("data-color");
+   const color = diggingItem.find(".color-btn.selected").attr("data-color")
    console.log(color);
 
 
    const price = diggingItem.find(".price").text();
    console.log(price);
 
-   const size = diggingItem.find(".size-btn.selected").text();
+   const size = diggingItem.find(".size-btn.selected").attr("data-size")
    console.log(size);
 
 
