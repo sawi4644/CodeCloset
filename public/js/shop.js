@@ -56,7 +56,7 @@ $(document).ready(() => {
   
 
       $.ajax({
-        url: "/cart",
+       url: "/cart",
         method: "POST",
         data: {
           item,
@@ -73,12 +73,6 @@ $(document).ready(() => {
       .catch(function(err){console.log(err)});
     })
 
-
-
-
-
-
-  
 });
 
 
