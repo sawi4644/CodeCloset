@@ -68,41 +68,11 @@ $(document).ready(() => {
       })
       .then(function(response){
         console.log(response)
-        window.location = "/cart";
+        // window.location = "/shop";
       })
       .catch(function(err){console.log(err)});
     })
-<<<<<<< HEAD
-  
-       $.ajax({
-         url: "/api/cart",
-         method: "POST",
-         data:{
-           item,
-           color,
-           size,
-           price
 
-         }
-       }).then(response =>{
-         window.location="/api/cart"
-       }).catch(err=>console.log(err))
-
-
-<<<<<<< HEAD
-  })
-   
- 
-=======
-// }
-=======
-
-
-
-
->>>>>>> 47eb9684bb0aeaa3a8441d0b95d0e08f0979b590
-  
->>>>>>> c8981190afe4a3d5dc83a6a9f3670d3e901cb3b2
 });
 
 
