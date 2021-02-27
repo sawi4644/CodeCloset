@@ -6,8 +6,8 @@
         <div class="row parent">
           <div class="col-sm-6">
         
-            <h3 data-id="{{this.id}}">{{this.item}}</h3>
-            <img  src="{{this.imgFileName}}" alt="{{this.imgFileName}}">
+            <h3 data-id="{{this.id}}" class="item">{{this.item}}</h3>
+            <img  data-image="{{this.imgFileName}}" src="{{this.imgFileName}}" alt="{{this.imgFileName}}">
           </div>
           <div class="col-sm-6">
             <div class="row color-row">
@@ -27,7 +27,7 @@
             </div>
   
             <div class="row size-row">
-              <h5 class="size">Size:{{this.size}}</h5>
+              <h5 class="size">Size:</h5>
               <button data-size="S" class="size-btn">S</button>
               <button data-size="M" class="size-btn">M</button>
               <button data-size="L" class="size-btn">L</button>

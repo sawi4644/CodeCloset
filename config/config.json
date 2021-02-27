@@ -2,6 +2,7 @@
   "development": {
     "username": "root",
     "password": "hahahaha",
+
     "database": "code_closet",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -18,3 +19,5 @@
     "dialect": "mysql"
   }
 }
+
+

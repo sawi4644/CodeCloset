@@ -28,7 +28,7 @@ module.exports = function(app) {
       .catch(err => {
         res.status(401).json(err);
       });
-  });
+  });    
 
   // Route for logging user out
   app.get("/logout", (req, res) => {
@@ -50,27 +50,6 @@ module.exports = function(app) {
       });
     }
   });
-
-  
-  // app.get("/cart/:id", (req, res) => {
-  //   console.log(req.params.id)
-  //    db.Closet.findOne({
-  //     where: {
-  //       id
-  //     }
-  //    })
-  //   .then(function(dbItem){
-  //     res.json(dbItem)
-  //     // console.log(dbCloset)
-  //   }).catch(function(err){
-  //     console.log(err)
-  //   })
-
-  // });
-
-
-  
-
  
 
   app.post("/cart", (req, res) => {
@@ -86,6 +65,28 @@ module.exports = function(app) {
     .then(function(dbCloset){
       res.json(dbCloset)
       // console.log(dbCloset)
+    }).catch(function(err){
+      console.log(err)
+    })
+
+  });
+
+  app.put("/item/:id", (req, res) => {
+    console.log(req.body)
+    console.log(req.params)
+    const id = req.params.id
+    console.log(id)
+     db.Closet.update(req.body,
+       {
+         where:{
+             id
+         }
+       }
+ 
+     )
+    .then(function(dbCloset){
+      res.json(dbCloset)
+      console.log(dbCloset)
     }).catch(function(err){
       console.log(err)
     })
@@ -108,32 +109,6 @@ module.exports = function(app) {
     })
 
   });
-
-  // app.put("/cart/:id", (req, res) => {
-  //   console.log(req.body)
-  //    db.Closet.update(req.body, {
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //    })
-  //   .then(function(dbItem){
-  //     res.json(dbItem)
-  //     // console.log(dbCloset)
-  //   }).catch(function(err){
-  //     console.log(err)
-  //   })
-
-  // });
-
-
- 
-
-
-
-
-
-
-
 
 
 };

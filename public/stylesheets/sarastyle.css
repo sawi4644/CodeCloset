@@ -242,16 +242,9 @@ h5{
     cursor: pointer;
   }
 
-  .checkout {
+  a.checkout {
     display: block;
-    background-color: rgb(0, 183, 255);
-    box-shadow: 0 5px 0 rgb(255, 227, 104);
-    color: white;
-    padding: 1em 1.5em;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
+    width: 100%;
   }
 
   
