@@ -6,46 +6,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   <link href="stylesheets/style.css" rel="stylesheet">
   <link href="stylesheets/sarastyle.css" rel="stylesheet">
-    <link href="stylesheets/shop.css" rel="stylesheet">
+  <link href="stylesheets/shop.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
- <div class="marketing-site-hero">
-  <div class="marketing-site-hero-content">
-    {{!-- <h1>Code Closet</h1> --}}
-  </div>
-</div>
-
-  {{!-- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header"> --}}
-      {{#if user}}
-        <ul class="menu menu-hover-lines" id="ulnav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="/logout">Logout</a></li>
-    </ul>
-      {{!-- <a class="navbar-brand" href="/logout">
-        Logout
-      </a> --}}
-      {{/if}}
+  <div class="marketing-site-hero">
+    <div class="marketing-site-hero-content">
+      {{!-- <h1>Code Closet</h1> --}}
     </div>
   </div>
-</nav>
-{{{body}}}
-<script type="text/javascript" src="js/members.js"></script>
- <script type="text/javascript" src="js/shop.js"></script>
+
+
+  {{#if user}}
+  <ul class="menu menu-hover-lines" id="ulnav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="/logout">Logout</a></li>
+  </ul>
+  {{/if}}
+  </div>
+  </div>
+  </nav>
+  {{{body}}}
+  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/shop.js"></script>
 
 </body>
 
