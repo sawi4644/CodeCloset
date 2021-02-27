@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  const Closet = sequelize.define("Closet", {
+  var Closet = sequelize.define("Closet", {
     item: {
       type: DataTypes.STRING,
       allowNull: false
@@ -23,7 +23,21 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+
+  Closet.associate = function(models){
+
+   Closet.belongsTo(models.User ,{
+      foreignKey:{
+        allowNull:false
+      }
+    })
+  
+  }
+
   return Closet;
+
+
+
 };
 
 
