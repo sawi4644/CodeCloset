@@ -31,12 +31,12 @@ module.exports = function(sequelize, DataTypes) {
       null
     );
   });
-  User.associate = function(models) {
+  // User.associate = function(models) {
     
-    User.hasMany(models.Closet, {
-      onDelete: "cascade"
-    });
-  };
+  //   User.hasMany(models.Closet, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
   return User;
 };

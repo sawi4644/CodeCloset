@@ -30,12 +30,30 @@ module.exports = function(app) {
     if (!req.user) {
       res.redirect("/login");
     }
-    db.Closet.findAll({
-      //where: userid=req.user.id
-    })
+    db.Closet.findAll(
+      {raw: true}
+      )
     .then(dbCloset => {
+      // console.log(dbCloset)
       res.render("cart", {
         allItems: dbCloset
+      })
+
+    })
+   
+  });
+
+  app.get("/cart/:id", (req, res) => {
+
+   const id = req.params.id
+    db.Closet.findOne({
+      where: {
+        id
+      }
+    })
+    .then(dbItem => {
+      res.render("cart", {
+        Item: dbItem
       })
 
     })
@@ -47,6 +65,32 @@ module.exports = function(app) {
       res.redirect("/login");
     }
     res.render("shop");
+  });
+
+  app.get("/item/:id", (req, res) => {
+    console.log(req.params)
+    if (!req.user) {
+      return res.redirect("/login");
+    }
+    db.Closet.findOne(
+     
+      {   
+
+      where:{
+        id: req.params.id
+      }
+    }).then(dbItem =>
+      { console.log(dbItem.dataValues)
+      
+      res.render("item", dbItem.dataValues)
+    }
+      );
+
+   
+    
+
+    
+ 
   });
 
 

@@ -1,2 +1,2 @@
 USE code_closet;
-SELECT * FROM closets
+SELECT * FROM closets;
