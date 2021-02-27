@@ -2,8 +2,13 @@
 const bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-  const User = sequelize.define("User", {
+var User = sequelize.define("User", {
     // The email cannot be null, and must be a proper email before creation
+    // id:{
+    //   type: DataTypes.STRING,
+    //   primaryKey: true
+
+    // },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -31,12 +36,16 @@ module.exports = function(sequelize, DataTypes) {
       null
     );
   });
-  // User.associate = function(models) {
-    
-  //   User.hasMany(models.Closet, {
-  //     onDelete: "cascade"
-  //   });
-  // };
 
+
+  User.associate = function(models){
+    User.hasMany(models.Closet, {
+      onDelete: 'cascade'
+    })
+  
+  }
+
+  
   return User;
 };
+

@@ -54,14 +54,15 @@ module.exports = function(app) {
   
   app.get("/cart/:id", (req, res) => {
     console.log(req.params.id)
-     db.Closet.findOne({
+     db.Closet.findAll({
       where: {
         id
       }
      })
     .then(function(dbItem){
+      console.log(dbItem)
       res.json(dbItem)
-      // console.log(dbCloset)
+
     }).catch(function(err){
       console.log(err)
     })
@@ -80,7 +81,8 @@ module.exports = function(app) {
        color: req.body.color,
        size: req.body.size,
        price:req.body.price,
-       imgFileName:req.body.imgFileName
+       imgFileName:req.body.imgFileName,
+       UserId: req.user.id
      })
     .then(function(dbCloset){
       res.json(dbCloset)
@@ -125,7 +127,7 @@ module.exports = function(app) {
   });
 
 
-
+ 
 
 
 
