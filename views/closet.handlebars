@@ -5,10 +5,10 @@
 
 <div class="container">
   <ul class="menu menu-hover-lines" id="ulnav">
-    <li><a href="/">Home</a></li>
+    <li><a href="/members">Home</a></li>
     <li class="active"><a href="#">View Closet</a></li>
-    <li><a href="shop">Shop</a></li>
-    <li><a href="cart">View Cart</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/cart">View Cart</a></li>
     <li><a href="/logout">Log Out</a></li>
   </ul>
 </div>
@@ -28,19 +28,29 @@
   <div class="grid-x grid-margin-x small-up-2 medium-up-3">
     <div class="card">
       <div class="card-section">
-        <img src="../sketches/sweatshirts_blue.svg" height="150" width="150">
-        <div class="item-name">
-          <h1>Under Contruction</h1>
-          <a>Stylish Sweatshirt</a>
-          <p><span class="title">Color:</span>Blue</p>
-          <p><span class="title">Size:</span>M</p>
-        </div>
-        <div class="item-price">
-          <p class="title">$24.99</p>
-          <a href="#">Remove</a>
+          {{#each this.allItems}}
+
+
+    <div class="checkout-summary-item">
+
+      <img src="{{this.imgFileName}}" height="150" width="100">
+      <div>
+        <p class="item-name">{{this.item}}</p>
+      </div>
+      <div>
+        <p>Color:<span class="item-color">{{this.color}}</span></p>
+        <p>Size:<span class="item-size">{{this.size}}</span></p>
+        <p class="item-price">Price: $<span>{{this.price}}</span></p>
+      </div>
+        <div>
+          <button class="btn btn-danger remove" data-id="{{this.id}}"><i class="fas fa-trash"></i></button>
           <br>
-          <a href="#"> Edit</a>
+          <a href="/item/{{this.id}}" class="btn btn-primary" data-id="{{this.id}}"> Edit</a>
         </div>
+
+      </div>
+
+      {{/each}}
       </div>
     </div>
   </div>
