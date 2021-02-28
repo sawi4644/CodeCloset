@@ -4,6 +4,7 @@ $(document).ready(()=>{
     const editBtn = $(".edit")
     
     
+    
     removeBtn.on("click", function(e){
         e.stopPropagation();
       const id = $(this).attr("data-id")

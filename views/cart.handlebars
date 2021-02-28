@@ -4,9 +4,9 @@
 
 <div class="container">
   <ul class="menu menu-hover-lines" id="ulnav">
-    <li><a href="/">Home</a></li>
-    <li><a href="closet">View Closet</a></li>
-    <li><a href="shop">Shop</a></li>
+    <li><a href="/members">Home</a></li>
+    <li><a href="/closet">View Closet</a></li>
+    <li><a href="/shop">Shop</a></li>
     <li class="active"><a href="#">View Cart</a></li>
     <li><a href="/logout">Log Out</a></li>
   </ul>
@@ -26,7 +26,7 @@
 
     <div class="checkout-summary-item">
 
-      <img src="{{this.imgFileName}}" height="150" width="100">
+      <img src="{{this.imgFileName}}" height="200" width="150">
       <div>
         <p class="item-name">{{this.item}}</p>
       </div>
@@ -52,7 +52,7 @@
 
         </div>
       </div>
-      <button class="button expanded">Finish Order</button>
+      <a href="/closet" class="button expanded finish-order">Finish Order</a>
     </div>
   </div>
 
@@ -77,7 +77,7 @@
             <a class="gh-ic" href="https://github.com/glynismullankwok">
               <i class="fab fa-github">Glynis</i>
             </a>
-            <a class="gh-ic">
+            <a class="gh-ic" href="#">
               <i class="fab fa-github">Nick</i>
             </a>
           </div>

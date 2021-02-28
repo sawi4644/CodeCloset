@@ -43,22 +43,6 @@ module.exports = function(app) {
    
   });
 
-  // app.get("/cart/:id", (req, res) => {
-
-  //  const id = req.params.id
-  //   db.Closet.findOne({
-  //     where: {
-  //       id
-  //     }
-  //   })
-  //   .then(dbItem => {
-  //     res.render("cart", {
-  //       Item: dbItem
-  //     })
-
-  //   })
-   
-  // });
 
   app.get("/shop", (req, res) => {
     if (!req.user) {
@@ -85,13 +69,11 @@ module.exports = function(app) {
       res.render("item", dbItem.dataValues)
     }
       );
-
-   
-    
-
-    
+        
  
   });
+
+
 
 
   // Here we've add our isAuthenticated middleware to this route.
