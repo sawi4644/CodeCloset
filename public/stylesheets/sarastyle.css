@@ -47,6 +47,8 @@
     max-width: auto;
     background-color: #fefefe;
     width: 100%;
+    font-size: 22px;
+    font-weight: bold;
   }
   
   .checkout-summary-title {
@@ -245,6 +247,7 @@ h5{
   a.checkout {
     display: block;
     width: 100%;
+    font-size: 20px;
   }
 
   
