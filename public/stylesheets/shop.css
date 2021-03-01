@@ -42,8 +42,8 @@ h5{
 .sweatpants,
 .legging{
     /* height: 440px; */
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
     display:block;
     margin: auto;
     padding: 10px;
@@ -132,4 +132,82 @@ button{
     color: whitesmoke;
 }
 
+@media screen and (min-width: 40em)  {
+
+    /* .item-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+  
+    } */
+  .row.parent{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+  }
+  .color-row{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap:wrap;
+  }
+
+  button{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+
+}
+  
+
+  .item{
+      width: 100%;
+      display: block;
+      margin: auto;
+  }
+  .img{
+      margin:0;
+      padding:0;
+      width: 200%;
+  }
+  h5{
+      font-size: 16px;
+     
+  }
+  .size-row{
+      display:inline-block;
+      margin: auto;
+    
+  }
+
+  .size-btn{
+      display: inline-block;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.add-to-cart{
+    font-size: 15px;
+    display: block;
+    margin: auto;
+}
+
+.price-row,
+.size-row{
+    padding: 5px;
+    margin:0px;
+}
+  }
 

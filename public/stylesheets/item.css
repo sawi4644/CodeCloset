@@ -1,0 +1,32 @@
+.item-container{
+    display: block;
+    margin: auto;
+    width: 100%
+}
+
+.item-color{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.parent{
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 40em)  {
+    .update-to-cart{
+        font-size: 12px;
+        display: block;
+        margin: auto;
+    }
+
+    .color-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+}
