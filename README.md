@@ -4,10 +4,9 @@ developers who want clothes that are comfortable to code in, and fashionable to 
 This is a full stack project that allows users to create a login, go to the members site
 to shop for clothes, review and edit their cart, and finally find a fun surprise waiting in
 the closet link.
+
 <br>
-![Project 2 Code Closet.gif](demo/demo.gif)
-
-
+![P2 Code Closet.gif](demo/demo.gif)
 <br>
 
 
