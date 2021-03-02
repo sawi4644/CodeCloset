@@ -73,9 +73,6 @@ module.exports = function(app) {
  
   });
 
-
-
-
   // Here we've add our isAuthenticated middleware to this route.
 
   app.get("/members", isAuthenticated, (req, res) => {
