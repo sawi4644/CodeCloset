@@ -8,6 +8,10 @@ the closet link.
 
 ![demo](./demo/demo.gif)
 
+Diplay of fully responsive website.
+
+![](./image/ImageiOS.png)
+
 
 # Technologies
 HTML, CSS, JavaScript, JQuery, Foundation, Bootstrap, Fontawesome, GitHub, MySQL, JawsDB,
