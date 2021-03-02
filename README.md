@@ -6,7 +6,7 @@ to shop for clothes, review and edit their cart, and finally find a fun surprise
 the closet link.
 
 <br>
-![](demo.gif)
+![demo](demo.gif)
 <br>
 
 
