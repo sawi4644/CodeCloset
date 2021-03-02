@@ -34,7 +34,7 @@ module.exports = function(app) {
       {raw: true}
       )
     .then(dbCloset => {
-      // console.log(dbCloset)
+      console.log(dbCloset)
       res.render("cart", {
         allItems: dbCloset
       })
@@ -72,9 +72,6 @@ module.exports = function(app) {
         
  
   });
-
-
-
 
   // Here we've add our isAuthenticated middleware to this route.
 

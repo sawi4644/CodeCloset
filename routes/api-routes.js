@@ -53,7 +53,7 @@ module.exports = function(app) {
  
 
   app.post("/cart", (req, res) => {
-    // console.log(req.body)
+
      db.Closet.create({
        item: req.body.item,
        color: req.body.color,
@@ -64,7 +64,7 @@ module.exports = function(app) {
      })
     .then(function(dbCloset){
       res.json(dbCloset)
-      // console.log(dbCloset)
+   
     }).catch(function(err){
       console.log(err)
     })
@@ -103,7 +103,7 @@ module.exports = function(app) {
      })
     .then(function(dbItem){
       res.send(200)
-      // console.log(dbCloset)
+
     }).catch(function(err){
       console.log(err)
     })

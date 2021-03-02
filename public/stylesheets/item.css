@@ -1,0 +1,56 @@
+.item-container{
+    display: block;
+    margin: auto;
+    width: 100%
+}
+
+/* .item-color-text{
+    margin-right: 100px;
+} */
+
+/* .item-color{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+} */
+
+img{
+    margin-top: 20px;
+    max-width: 350px;
+    max-height: 400px;
+}
+h5{
+    font-size: 20px;
+}
+
+
+
+button.update-to-cart{
+    width: 80%;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+   
+        height: 40px;
+    background-color:#006064;
+    color: whitesmoke;
+}
+
+ @media screen and (max-width: 40em){
+
+    .item-color-text{
+       text-align: center;
+    }
+
+    .row color-row item-color{
+        display: block;
+        margin: auto;
+    }
+
+    button.update-to-cart{
+        width: 100%
+    }
+
+}

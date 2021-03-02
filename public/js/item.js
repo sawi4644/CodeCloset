@@ -76,7 +76,7 @@ updateBtn.on("click", function(){
        size
     }
 }).then(response=>{
-    window.location= "/cart"
+  window.location= "/cart"
 }).catch(err => console.log(err))
     
 })
