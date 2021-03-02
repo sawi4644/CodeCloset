@@ -6,7 +6,7 @@ to shop for clothes, review and edit their cart, and finally find a fun surprise
 the closet link.
 
 <br>
-![P2 Code Closet.gif](demo/demo.gif)
+![](demo.gif)
 <br>
 
 
