@@ -14,7 +14,7 @@ the closet link.
 
 # Technologies
 HTML, CSS, JavaScript, JQuery, Foundation, Bootstrap, Fontawesome, GitHub, MySQL, JawsDB,
-Heroku, Node JS
+Heroku, Node JS, Adobe Illustrator
 <br>
 NPM: fs, bcrypt.js, dotenv, express, express-handlebars, express-session, mysql2, passport, 
      passport-local, sequelize, easter-egg-collection
