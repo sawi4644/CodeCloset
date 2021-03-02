@@ -6,7 +6,7 @@ to shop for clothes, review and edit their cart, and finally find a fun surprise
 the closet link.
 
 <br>
-![demo] (https://github.com/sawi4644/CodeCloset-P2/blob/main/demo.gif)
+![demo](./demo.gif)
 <br>
 
 
