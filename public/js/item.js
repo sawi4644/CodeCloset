@@ -22,7 +22,6 @@ $(document).ready(()=>{
       .find("img");
     const category = image.attr("data-image").match(/(?<=\/).*?(?=_)/gs)[0];
 
-    // var result = s.match(/(?<=cow\s+).*?(?=\s+milk)/gs)
    
     console.log(category) 
 

@@ -1,29 +1,24 @@
-body{
+body {
     margin: 0;
-    padding:0;
-    
+    padding: 0;
+
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.container{
-    padding:0px;
-  
+.container {
+    padding: 0px;
+
 }
 
-.item-container{
+.item-container {
     margin-bottom: 100px;
 }
 
 
-/* .bottom-row{
-    margin-top: 100px;
-} */
-
-
-h3{
+h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -31,25 +26,25 @@ h3{
 
 h5.colors,
 h5.price-text,
-h5.size{
+h5.size {
     font-size: 20px;
     font-weight: bold;
 }
 
 .sweatshirt,
-.tee{
-    max-height:400px;
-    max-width:350px;
-    display:block;
+.tee {
+    max-height: 400px;
+    max-width: 350px;
+    display: block;
     margin: auto;
     padding: 10px;
 }
 
 .sweatpants,
-.legging{
-   max-height:500px;
-   max-width:350px;
-    display:block;
+.legging {
+    max-height: 500px;
+    max-width: 350px;
+    display: block;
     margin: auto;
     padding: 10px;
 
@@ -57,7 +52,7 @@ h5.size{
 
 
 
-button{
+button {
     width: 60px;
     height: 50px;
     padding: 10px;
@@ -69,94 +64,97 @@ button{
 
 }
 
-.color-text{
+.color-text {
     font-weight: lighter;
     display: inline-block;
 }
-.color-row{
+
+.color-row {
     display: inline-block;
-    margin:auto;
+    margin: auto;
 }
 
 .price-row,
-.size-row{
+.size-row {
     padding: 5px;
-    margin-left:10px;
-}
-.yellow{
-    background-color:#f9c02d;
+    margin-left: 10px;
 }
 
+.yellow {
+    background-color: #f9c02d;
+}
 
-.red{
-    background-color:#ff5252;
+
+.red {
+    background-color: #ff5252;
 
 }
 
-.pink{
-    background-color:#f48fb1;
- 
+.pink {
+    background-color: #f48fb1;
+
 }
 
-.blue{
-    background-color:#1976d2;
- 
+.blue {
+    background-color: #1976d2;
+
 }
 
-.green{
-    background-color:#009650;
- 
+.green {
+    background-color: #009650;
+
 }
 
-.grey{
-    background-color:#455a64;
- 
+.grey {
+    background-color: #455a64;
+
 }
-.size-row{
+
+.size-row {
     display: flex;
 }
+
 button.size-btn {
-    background-color:whitesmoke;
-    border:solid lightslategray 2px;
+    background-color: whitesmoke;
+    border: solid lightslategray 2px;
     height: 40px;
     width: 40px;
     font-size: 15px;
 }
-.selected{
-    transform: scale(1.1); 
-    box-shadow:0px 0px 10px black;
+
+.selected {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
 
 }
-button.add-to-cart{
+
+button.add-to-cart {
     width: 60%;
     display: block;
     font-size: 16px;
     margin-left: 50px;
-        height: 40px;
-    background-color:#006064;
+    height: 40px;
+    background-color: #006064;
     color: whitesmoke;
 }
 
-@media screen and (max-width: 40em)  {
-    .col-md-6{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   
-
-  }
-  .colors{
-      text-align: center;
-  }
- 
-  .add-to-cart{
-      width: 100%;
-      padding: 10px;
-  }
+@media screen and (max-width: 40em) {
+    .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
 
-  
+    }
 
-  
-  }
+    .colors {
+        text-align: center;
+    }
 
+    .add-to-cart {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+}
