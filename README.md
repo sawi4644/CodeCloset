@@ -5,11 +5,8 @@ This is a full stack project that allows users to create a login, go to the memb
 to shop for clothes, review and edit their cart, and finally find a fun surprise waiting in
 the closet link.
 
-<br>
-![demo][demo]
 
-[demo]: https://github.com/sawi4644/CodeCloset-P2/blob/main/demo.gif"
-<br>
+![demo](./demo/demo.gif)
 
 
 # Technologies
