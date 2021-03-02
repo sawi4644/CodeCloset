@@ -8,6 +8,11 @@ the closet link.
 
 ![demo](./demo/demo.gif)
 
+# Responsive in mobile
+
+![front-page](./public/img/frontpg.jpg)
+![shop-page](./public/img/tee1.jpg)
+![edit-page](./public/img/sweatshirts.jpg)
 
 # Technologies
 HTML, CSS, JavaScript, JQuery, Foundation, Bootstrap, Fontawesome, GitHub, MySQL, JawsDB,
@@ -32,8 +37,9 @@ Sara Wilson- Front End
 Glynis Mullan-Kwok- Back End
 <br>
 Nicholas Luberda- Front End
-<br>
+
 # Website Deploy Links
 GitHub: https://github.com/sawi4644/CodeCloset-P2.git
-<br>
-Heroku: https://obscure-scrubland-41344.herokuapp.com/
+
+
+Heroku: https://obscure-scrubland-41344.herokuapp.com
