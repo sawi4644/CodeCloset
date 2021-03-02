@@ -21,6 +21,8 @@ $(document).ready(()=>{
       .closest(".item-container")
       .find("img");
     const category = image.attr("data-image").match(/(?<=\/).*?(?=_)/gs)[0];
+
+    // var result = s.match(/(?<=cow\s+).*?(?=\s+milk)/gs)
    
     console.log(category) 
 
@@ -74,7 +76,7 @@ updateBtn.on("click", function(){
        size
     }
 }).then(response=>{
-    window.location= "/cart"
+  window.location= "/cart"
 }).catch(err => console.log(err))
     
 })

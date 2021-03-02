@@ -1,7 +1,7 @@
 $(document).ready(()=>{
 
     const removeBtn = $(".remove")
-    const editBtn = $(".edit")
+    
     
     
     removeBtn.on("click", function(e){

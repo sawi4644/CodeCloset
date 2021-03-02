@@ -13,5 +13,10 @@
 }
 
 .bgnd{
-    background-image:url("/img/construct.jpg");
+    background-color: hotpink;
+}
+.para{
+    line-height: 1.6;
+    font-size: 24px;
+    letter-spacing: 0.5px;
 }
