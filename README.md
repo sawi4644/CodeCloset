@@ -5,9 +5,8 @@ This is a full stack project that allows users to create a login, go to the memb
 to shop for clothes, review and edit their cart, and finally find a fun surprise waiting in
 the closet link.
 
-<br>
+
 ![demo](./demo/demo.gif)
-<br>
 
 
 # Technologies
