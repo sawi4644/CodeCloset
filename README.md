@@ -8,11 +8,17 @@ the closet link.
 
 ![demo](./demo/demo.gif)
 
+
 # Responsive in mobile
 
 ![front-page](./public/img/frontpg.jpg)
 ![shop-page](./public/img/tee1.jpg)
 ![edit-page](./public/img/sweatshirts.jpg)
+Display of fully responsive website.
+
+![](./image/ImageiOS.png)
+
+
 
 # Technologies
 HTML, CSS, JavaScript, JQuery, Foundation, Bootstrap, Fontawesome, GitHub, MySQL, JawsDB,
