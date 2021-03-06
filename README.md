@@ -6,20 +6,14 @@ to shop for clothes, review and edit their cart, and finally find a fun surprise
 the closet link.
 
 
-![demo](./demo/demo.gif)
+![demo](./demo/fullview.gif)
 
-<<<<<<< HEAD
 # Responsive in mobile
+![demo](./demo/responsive.gif)
 
-![front-page](./public/img/frontpg.jpg)
-![shop-page](./public/img/tee1.jpg)
-![edit-page](./public/img/sweatshirts.jpg)
-=======
 Display of fully responsive website.
 
-![](./image/ImageiOS.png)
 
->>>>>>> 9bf4b5bf509053a44c6a3873df4556baf26ffa6d
 
 # Technologies
 HTML, CSS, JavaScript, JQuery, Foundation, Bootstrap, Fontawesome, GitHub, MySQL, JawsDB,
@@ -46,7 +40,7 @@ Glynis Mullan-Kwok- Back End
 Nicholas Luberda- Front End
 
 # Website Deploy Links
-GitHub: https://github.com/sawi4644/CodeCloset-P2.git
+GitHub: https://github.com/Oliviapark113/CodeCloset-P2
 
 
-Heroku: https://obscure-scrubland-41344.herokuapp.com
+Heroku: https://stormy-stream-41757.herokuapp.com
