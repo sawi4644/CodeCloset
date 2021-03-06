@@ -10,11 +10,24 @@
   align-items: center;
 }
 
-@media screen and (min-width: 40em) {
-  .marketing-site-hero {
-    background-position: center center;
-  }
+
+.checkout-summary-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
 }
+
+.btn-area{
+  display: flex;
+  flex-direction: row;
+}
+.cardBod{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 
 .marketing-site-hero-content {
   max-width: 75rem;
@@ -35,10 +48,11 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 40em) {
-  .marketing-site-hero-content {
-    padding-left: 50%;
-  }
+
+
+.card-img-top{
+  height: 300px;
+  width: 360px;
 }
 
 
@@ -85,6 +99,10 @@
   padding: 0;
 }
 
+.item-name {
+  text-align: center;
+}
+
 .checkout-summary-item .title {
   font-weight: bold;
 }
@@ -105,6 +123,10 @@
   border-radius: 4%;
 }
 
+.edit{
+  height: 50px;
+  margin-left: 10px;
+}
 
 .menu-hover-lines {
   text-align: center;
@@ -172,7 +194,7 @@
 }
 
 .carBod {
-  padding: 30%;
+  /* padding: 30%; */
 
 }
 
@@ -190,7 +212,7 @@ p {
 }
 
 
-.basic-card {
+/* .basic-card {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -208,21 +230,21 @@ p {
   display: flex;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 auto;
-  width: 40%;
-}
+
+} */
 
 .basic-card> :last-child {
   margin-bottom: 0;
 }
 
-.basic-card-image {
+/* .basic-card-image {
   grid-row-end: 4;
   -ms-grid-row: 1;
   grid-row-start: 1;
-}
+} */
 
 
 .basic-card-content {
@@ -248,4 +270,57 @@ a.checkout {
   display: block;
   width: 100%;
   font-size: 20px;
+}
+
+.sign-up{
+  width: auto;
+}
+
+@media screen and (max-width: 740px) {
+  .checkout-summary-item{
+    font-size:18px;
+  }
+  .cardBod {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding:0;
+    margin:0;
+  }
+  .col-6 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .btn-area{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+  
+  .remove{
+    height: 55px;
+    width: 50px;
+    padding: 0px;
+  }
+
+  .edit{
+    margin-left:0;
+  }
+
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero-content {
+    padding-left: 50%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
 }

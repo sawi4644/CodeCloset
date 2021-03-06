@@ -24,21 +24,21 @@
     {{#each this.allItems}}
 
 
-    <div class="checkout-summary-item">
-
-      <img src="{{this.imgFileName}}" height="200" width="150">
+    <div class="checkout-summary-item" style="justify-content: space-around;">
+   
       <div>
-        <p class="item-name">{{this.item}}</p>
+       <p class="item-name">{{this.item}}</p>
+       <img src="{{this.imgFileName}}" height="200" width="150">
       </div>
       <div>
         <p><span class="item-color">Color:{{this.color}}</span></p>
         <p><span class="item-size">Size:{{this.size}}</span></p>
         <p class="item-price">$<span>{{this.price}}</span></p>
       </div>
-      <div>
+      <div class = "btn-area">
         <button class="btn btn-danger remove" data-id="{{this.id}}"><i class="fas fa-trash"></i></button>
         <br>
-        <a href="/item/{{this.id}}" class="btn btn-primary" data-id="{{this.id}}"> Edit</a>
+        <a href="/item/{{this.id}}" class="btn btn-primary edit" data-id="{{this.id}}"> Edit</a>
       </div>
 
     </div>
