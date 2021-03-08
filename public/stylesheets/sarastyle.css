@@ -193,10 +193,6 @@
 
 }
 
-.carBod {
-  /* padding: 30%; */
-
-}
 
 #cart {
   display: flex;
@@ -212,39 +208,12 @@ p {
 }
 
 
-/* .basic-card {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  border: 1px solid #e6e6e6;
-  border-radius: 0;
-  background: #fefefe;
-  box-shadow: none;
-  overflow: hidden;
-  color: #0a0a0a;
-  display: -ms-grid;
-  display: flex;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 0 auto;
-
-} */
 
 .basic-card> :last-child {
   margin-bottom: 0;
 }
 
-/* .basic-card-image {
-  grid-row-end: 4;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-} */
+
 
 
 .basic-card-content {

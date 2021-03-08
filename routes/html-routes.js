@@ -6,27 +6,27 @@ const { decodeBase64 } = require("bcryptjs");
 module.exports = function (app) {
   app.get("/", (req, res) => {
     if (req.user) {
-      res.redirect("/members");
+      return res.redirect("/members");
     }
     res.render("signup");
   });
 
   app.get("/login", (req, res) => {
     if (req.user) {
-      res.redirect("/members");
+      return res.redirect("/members");
     }
     res.render("login");
   });
 
   app.get("/closet", (req, res) => {
 
-    res.render("closet");
+    return res.render("closet");
   });
 
   app.get("/cart", (req, res) => {
 
     if (!req.user) {
-      res.redirect("/login");
+      return res.redirect("/login");
     }
     db.Closet.findAll(
       { raw: true }
@@ -44,7 +44,7 @@ module.exports = function (app) {
 
   app.get("/shop", (req, res) => {
     if (!req.user) {
-      res.redirect("/login");
+      return res.redirect("/login");
     }
     res.render("shop");
   });
