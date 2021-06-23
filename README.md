@@ -1,4 +1,4 @@
-# CodeCloset-P2
+# CodeCloset
 Welcome to our awesome project, Code Closet.  This is a speciality shopping site for web
 developers who want clothes that are comfortable to code in, and fashionable to zoom in.
 This is a full stack project that allows users to create a login, go to the members site
